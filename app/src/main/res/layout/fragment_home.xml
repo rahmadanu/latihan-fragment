@@ -28,7 +28,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>
 
-    <Button
+<!--    <Button
         android:id="@+id/btn_pass_data"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -36,6 +36,6 @@
         android:layout_gravity="center"
         app:layout_constraintTop_toBottomOf="@id/btn_another_fragment_operation"
         app:layout_constraintStart_toStartOf="@id/btn_another_fragment_operation"
-        app:layout_constraintEnd_toEndOf="@id/btn_another_fragment_operation"/>
+        app:layout_constraintEnd_toEndOf="@id/btn_another_fragment_operation"/>-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
