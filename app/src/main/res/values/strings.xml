@@ -3,7 +3,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="replace">Replace Fragment A</string>
-    <string name="remove">Remove Fragment A/C</string>
+    <string name="remove">Remove Fragment B</string>
     <string name="title_home">Home</string>
     <string name="title_chat">Chat</string>
     <string name="title_more">More</string>
