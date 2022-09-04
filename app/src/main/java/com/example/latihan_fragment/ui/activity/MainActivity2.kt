@@ -11,6 +11,7 @@ import com.example.latihan_fragment.ui.`interface`.OnDataPass
 import com.example.latihan_fragment.ui.fragment.FragmentA
 import com.example.latihan_fragment.ui.fragment.FragmentB
 import com.example.latihan_fragment.ui.fragment.FragmentC
+import com.example.latihan_fragment.ui.model.User
 
 class MainActivity2 : AppCompatActivity(), OnDataPass {
 
@@ -42,9 +43,13 @@ class MainActivity2 : AppCompatActivity(), OnDataPass {
             }
         }
 
-        binding.btnPassData.setOnClickListener { // bug force closed if clicked twice
+        binding.btnPassData.setOnClickListener { // bug force closed if clicked twice (put if else and blank & visible)
+            val user = User("danu", "danu@gmail.com")
+
             val bundle = Bundle()
             bundle.putString("MainActivity2", "Sent from MainActivity2")
+            bundle.putParcelable("user", user)
+
             fragmentB.arguments = bundle
             fragmentTransaction.add(R.id.container_b, fragmentB).commit()
         } // found out how to pass data to existing fragment (this one must be passed and committed simultaneously)

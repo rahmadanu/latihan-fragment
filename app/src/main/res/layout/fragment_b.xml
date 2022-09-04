@@ -24,7 +24,7 @@
         android:id="@+id/tv_data1_received"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="60dp"
         android:layout_gravity="bottom"
         android:textSize="20sp"
         tools:text="Sent from MainActivity"/>
@@ -33,7 +33,15 @@
         android:id="@+id/tv_data2_received"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
         android:layout_gravity="bottom"
         android:textSize="20sp"
         tools:text="Sent from MainActivity2"/>
+
+    <TextView
+        android:id="@+id/tv_data_parcelable_received"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        tools:text="parcelable: danu danu@gmail.com"/>
 </FrameLayout>

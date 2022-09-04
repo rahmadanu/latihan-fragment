@@ -11,6 +11,7 @@ import com.example.latihan_fragment.R
 import com.example.latihan_fragment.databinding.FragmentBBinding
 import com.example.latihan_fragment.databinding.FragmentHomeBinding
 import com.example.latihan_fragment.ui.`interface`.OnDataPass
+import com.example.latihan_fragment.ui.model.User
 
 class FragmentB : Fragment() {
 
@@ -42,8 +43,10 @@ class FragmentB : Fragment() {
 
         val bundle = arguments
         val message = bundle!!.getString("MainActivity2")
+        val userData = bundle.getParcelable<User>("user")!!
 
         binding.tvData2Received.text = message
+        binding.tvDataParcelableReceived.text = getString(R.string.parcelable_text, userData.name, userData.email)
     }
 
     private fun passData(data: String) {
