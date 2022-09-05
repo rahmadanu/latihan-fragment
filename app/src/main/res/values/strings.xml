@@ -8,4 +8,6 @@
     <string name="title_chat">Chat</string>
     <string name="title_more">More</string>
     <string name="parcelable_text">Parcelable: %1$s and %2$s</string>
+    <string name="pass_data_to_fragment_b_again">Pass data to Fragment B again</string>
+    <string name="pass_data_to_fragment_b">Pass data to Fragment B</string>
 </resources>

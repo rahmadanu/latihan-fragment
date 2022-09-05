@@ -42,11 +42,18 @@ class FragmentB : Fragment() {
         }
 
         val bundle = arguments
-        val message = bundle!!.getString("MainActivity2")
-        val userData = bundle.getParcelable<User>("user")!!
 
-        binding.tvData2Received.text = message
-        binding.tvDataParcelableReceived.text = getString(R.string.parcelable_text, userData.name, userData.email)
+        if (bundle != null) {
+
+            //val message = bundle.getString("MainActivity2")
+            val userData = bundle.getParcelable<User>("user")!!
+
+            binding.tvDataParcelableReceived.text = getString(R.string.parcelable_text, userData.name, userData.email)
+        }
+    }
+
+    fun getData(data: String) {
+        binding.tvData2Received.text = data
     }
 
     private fun passData(data: String) {

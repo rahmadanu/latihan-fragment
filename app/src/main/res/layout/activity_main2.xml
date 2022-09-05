@@ -42,27 +42,36 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/replace"
-        app:layout_constraintTop_toBottomOf="@id/container_b"
+        app:layout_constraintBottom_toTopOf="@id/btn_remove"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
     <Button
         android:id="@+id/btn_remove"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/remove"
+        app:layout_constraintBottom_toTopOf="@id/btn_pass_data"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_replace" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/btn_pass_data"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pass data to Fragment B"
+        android:text="@string/pass_data_to_fragment_b"
+        app:layout_constraintBottom_toTopOf="@id/btn_pass_data_to_fragment_b_again"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_remove" />
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btn_pass_data_to_fragment_b_again"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pass_data_to_fragment_b_again"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
