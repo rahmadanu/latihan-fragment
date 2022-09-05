@@ -42,19 +42,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/replace"
-        app:layout_constraintBottom_toTopOf="@id/btn_remove"
+        app:layout_constraintBottom_toTopOf="@id/btn_pass_data"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
-
-    <Button
-        android:id="@+id/btn_remove"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/remove"
-        app:layout_constraintBottom_toTopOf="@id/btn_pass_data"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/btn_pass_data"
@@ -70,6 +61,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/pass_data_to_fragment_b_again"
+        app:layout_constraintBottom_toTopOf="@id/btn_remove"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btn_remove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/remove"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
